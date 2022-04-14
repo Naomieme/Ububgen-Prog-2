@@ -1,0 +1,45 @@
+
+/**
+ * Beschreiben Sie hier die Klasse Uhrzeit.
+ * 
+ * @author (Ihr Name) 
+ * @version (eine Versionsnummer oder ein Datum)
+ */
+public class Uhrzeit
+{
+    // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
+    private int stunde;
+    private int minute;
+
+    /**
+     * Konstruktor für Objekte der Klasse Uhrzeit
+     */
+    public Uhrzeit(int stunde, int minute)
+    {
+        this.stunde = stunde; 
+        this.minute = minute;
+    }
+
+    public int getMinute(){
+        return minute; 
+    }
+    
+    public int getStunde()
+    {
+        return stunde;
+    }
+    
+    public void setStunde(int stunde){
+        if( stunde < 1 || stunde > 24)
+        System.out.print(" Stunde muss von 1uhr bis 24 gehen"); 
+        this.stunde = stunde; 
+    }
+    
+    public void setMinute(int minute){
+        this.minute = minute; 
+    }
+    
+    public String toString(){
+        return stunde + ":" + minute + "" + "Uhr";
+    }
+}
