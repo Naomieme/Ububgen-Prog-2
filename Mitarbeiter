@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+/**
+ * Beschreiben Sie hier die Klasse Mitarbeiter.
+ * 
+ * @author (Ihr Name) 
+ * @version (eine Versionsnummer oder ein Datum)
+ */
+public class Mitarbeiter extends Person
+{
+    private static String email; 
+    private Reservierung reservierung; 
+    private Scanner input = new Scanner(System.in);
+    /**
+     * Konstruktor für Objekte der Klasse Mitarbeiter
+     */
+    public Mitarbeiter(String email)
+    {
+        super( vorname,nachname);
+        this.email = email; 
+    }
+
+    public String getEmail()
+    {
+        return email;
+    }
+    
+    public void setEmail (String email) 
+    {
+        this.email = email; 
+    }
+    
+    public String toString () 
+    {
+        return vorname + "" +nachname + "" + "(" + email + ")" ; 
+        
+    }
+    
+    /**public String reservieren ()
+    {
+        
+    }
+    **/
+}
