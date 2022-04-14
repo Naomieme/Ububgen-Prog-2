@@ -1,0 +1,43 @@
+
+/**
+ * Beschreiben Sie hier die Klasse Reservierung.
+ * 
+ * @author (Ihr Name) 
+ * @version (eine Versionsnummer oder ein Datum)
+ */
+public class Reservierung
+{
+    // Instanzvariablen - ersetzen Sie das folgende Beispiel mit Ihren Variablen
+    private  Uhrzeit beginn;
+    private Uhrzeit ende; 
+    private String bemerkung;
+    private Mitarbeiter mitarbeiter;
+    private Raum raum; 
+    /**
+     * Konstruktor für Objekte der Klasse Reservierung
+     */
+    public Reservierung( Uhrzeit beginn, Uhrzeit ende)
+    {
+        this.beginn = beginn; 
+        this.ende = ende; 
+        this.bemerkung = bemerkung; 
+        this.mitarbeiter = mitarbeiter; 
+        this.raum = raum; 
+        
+    }
+
+    public void setBemerkung (String bemerkung ) 
+    {
+       this.bemerkung = bemerkung;  
+    }
+    
+    public void setRaum (Raum raum)
+    {
+        this.raum= raum;
+    }
+    
+    public String toString()
+    {
+    return raum + "/n" +"gebucht von" + "" + mitarbeiter + "" + "von " + beginn + " bis "+ ende + "" + bemerkung;  
+    }
+}
